@@ -1,0 +1,5 @@
+# hp envy x360 shortcuts for touchpad/touchscreen
+alias touchpad_on="xinput enable $(xinput -list | grep 'Synaptics TouchPad' | cut -f 2 | sed -e 's/id=//')"
+alias touchpad_off="xinput disable $(xinput -list | grep 'Synaptics TouchPad' | cut -f 2 | sed -e 's/id=//')"
+alias touchscreen_on="xinput enable $(xinput -list | grep 'ELAN' | grep -v 'Pen' | cut -f 2 | sed -e 's/id=//')"
+alias touchscreen_off="xinput disable $(xinput -list | grep 'ELAN' | grep -v 'Pen' | cut -f 2 | sed -e 's/id=//')"

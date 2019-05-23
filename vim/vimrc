@@ -1,0 +1,19 @@
+:syn on
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+:set hlsearch
+:set incsearch
+:set number
+:set cursorline
+
+au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.go set filetype=go
+
+:cmap ,h :!html-beautify -f % -r
+:cmap ,j :!js-beautify -f % -r
+:cmap ,dd :!deploy_cloudsite_dropbox.sh
+:cmap ,dl :!deploy_cloudsite_local.sh
+:cmap ,l :!jslint %
+
+:imap ii <Esc>
