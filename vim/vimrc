@@ -9,6 +9,7 @@
 
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
 
 :cmap ,h :!html-beautify -f % -r
 :cmap ,j :!js-beautify -f % -r
