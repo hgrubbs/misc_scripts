@@ -15,6 +15,6 @@ au BufRead,BufNewFile *.go set filetype=go
 :cmap ,dd :!deploy_cloudsite_dropbox.sh
 :cmap ,dl :!deploy_cloudsite_local.sh
 :cmap ,l :!jslint %
-:cmap ,y :0,$!yapf
+:cmap ,p :0,$!yapf
 
 :imap ii <Esc>
