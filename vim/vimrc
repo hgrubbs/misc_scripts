@@ -14,8 +14,6 @@ au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
 
 :cmap ,h :!html-beautify -f % -r
 :cmap ,j :!js-beautify -f % -r
-:cmap ,dd :!deploy_cloudsite_dropbox.sh
-:cmap ,dl :!deploy_cloudsite_local.sh
 :cmap ,l :!jslint %
 :cmap ,p :0,$!yapf
 
