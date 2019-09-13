@@ -16,6 +16,7 @@ au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
 :cmap ,j :!js-beautify -f % -r
 :cmap ,l :!jslint %
 :cmap ,p :0,$!yapf
+:cmap ,d :w !diff % -
 
 :imap ii <Esc>
 
