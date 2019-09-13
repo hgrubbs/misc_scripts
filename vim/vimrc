@@ -20,4 +20,4 @@ au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
 :imap ii <Esc>
 
 " netrw(Explore) opens files in previous window
-let g:netrw_browse_split = 1
+"let g:netrw_browse_split = 4
