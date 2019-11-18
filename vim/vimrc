@@ -27,4 +27,3 @@ let g:netrw_browse_split = 4
 
 
 :set textwidth=0 "jedi sets this to 80, which i think is lame
-:set nowrap "goes hand in hand with textwidth=0
