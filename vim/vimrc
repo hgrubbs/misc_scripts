@@ -16,7 +16,7 @@ au BufRead,BufNewFile *.py set foldmethod=indent
 :cmap ,d :w !diff % -
 :cmap ,p :0,$!yapf
 
-:imap ii <Esc>
+":imap ii <Esc> "remap escape for stupid touchbars
 
 
 let g:netrw_browse_split = 4
