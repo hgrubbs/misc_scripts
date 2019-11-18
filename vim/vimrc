@@ -7,19 +7,21 @@
 :set number
 :set cursorline
 
-au BufRead,BufNewFile Jenkinsfile set filetype=groovy
+au BufRead,BufNewFile Jenkinsfile* set filetype=groovy
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.go set filetype=go
 au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
-au BufRead,BufNewFile *.tf set tabstop=2 shiftwidth=2
 
 :cmap ,h :!html-beautify -f % -r
 :cmap ,j :!js-beautify -f % -r
+:cmap ,d :w !diff % -
 :cmap ,l :!jslint %
 :cmap ,p :0,$!yapf
-:cmap ,d :w !diff % -
 
 :imap ii <Esc>
 
-" netrw(Explore) opens files in previous window
-"let g:netrw_browse_split = 4
+
+let g:netrw_browse_split = 4
+"execute pathogen#infect()
+""let g:jedi#auto_initialization = 0  " disable jedi
+"let g:jedi#popup_on_dot = 0 " don't pop open autocomplete on by typing '.'
