@@ -17,14 +17,23 @@ au BufRead,BufNewFile *.py set foldmethod=indent
 :cmap ,p :0,$!yapf
 :cmap ,m :w !mypy %
 
-":imap ii <Esc> "remap escape for stupid touchbars
+""remap escape for stupid touchbars
+":imap ii <Esc> 
 
-
+""open files from explore in previous split
 let g:netrw_browse_split = 4
-"execute pathogen#infect() "enable pathogen(which if jedi is installed, starts it automatically
-""let g:jedi#auto_initialization = 0  " disable jedi
-""let g:jedi#popup_on_dot = 0 " don't pop open autocomplete on by typing '.'
-""let g:jedi#show_call_signatures = "1" "can disable showing call signatures altogether
 
+""enable pathogen(which if jedi is installed, starts it automatically
+"execute pathogen#infect() 
 
-:set textwidth=0 "jedi sets this to 80, which i think is lame
+""disable jedi
+"let g:jedi#auto_initialization = 0
+
+"" don't pop open autocomplete on by typing '.'
+"let g:jedi#popup_on_dot = 0 
+
+""can disable showing call signatures altogether
+"let g:jedi#show_call_signatures = "1" 
+
+"jedi sets this to 80, which i think is lame
+:set textwidth=0 
