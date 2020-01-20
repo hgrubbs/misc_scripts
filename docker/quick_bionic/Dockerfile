@@ -16,11 +16,4 @@ RUN cd /root/misc_scripts && ./setup_vim_tmux_bashrc.sh && ./install_pathogen_an
 #ttystudio
 RUN npm install -g ttystudio
 
-#update .profile to display short message about host mount
-RUN echo "##########" >> /root/.profile
-RUN echo "Host /HOMEDIR/mnt/quick_bionic is bind mounted in container at /mnt/quick_bionic ">> /root/.profile
-RUN echo "##########" >> /root/.profile
-RUN echo "" >> /root/.profile
-
-
 CMD cd /root && /bin/bash
