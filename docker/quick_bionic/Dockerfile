@@ -9,11 +9,11 @@ RUN cd /root && wget https://bootstrap.pypa.io/get-pip.py && python3.8 get-pip.p
 #pip: ipython, yapf
 RUN python3.8 -m pip install ipython yapf
 
+#npm: ttystudio
+RUN npm install -g ttystudio
+
 #misc_scripts
 RUN cd /root && git clone https://github.com/hgrubbs/misc_scripts
 RUN cd /root/misc_scripts && ./setup_vim_tmux_bashrc.sh && ./install_pathogen_and_jedi.sh
-
-#ttystudio
-RUN npm install -g ttystudio
 
 CMD cd /root && /bin/bash
