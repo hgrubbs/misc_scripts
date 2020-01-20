@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y git tmux build-essential npm htop opens
 #python3.8 pip
 RUN cd /root && wget https://bootstrap.pypa.io/get-pip.py && python3.8 get-pip.py
 
-#ipython
-RUN python3.8 -m pip install ipython
+#pip: ipython, yapf
+RUN python3.8 -m pip install ipython yapf
 
 #misc_scripts
 RUN cd /root && git clone https://github.com/hgrubbs/misc_scripts
