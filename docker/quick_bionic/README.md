@@ -25,3 +25,7 @@ Some additional convenience like locale (with en_US.UTF-8 configured) are also i
 5. `mkdir -p $HOME/mnt/quick_bionic` (create the shared mount point)
 
 All done! Test it out by sourcing `.bashrc` (or opening a new shell), and typing `quick_bionic`
+
+## Demo
+
+![quick_bionic demo](quick_bionic.gif)
