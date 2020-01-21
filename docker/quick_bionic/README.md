@@ -18,10 +18,12 @@ Some additional convenience like locale (with en_US.UTF-8 configured) are also i
 
 ## Quickstart (assuming Ubuntu/Debian)
 
-1. `apt install pwgen`
-2. `apt install docker`  (assuming your repos are setup from https://docs.docker.com/install/linux/docker-ce/ubuntu/ )
-3. `cat bashrc >> $HOME/.bashrc` (this adds the `quick_bionic` alias)
-4. `docker build -t local:bionic-latest .`
-5. `mkdir -p $HOME/mnt/quick_bionic` (create the shared mount point)
+1. `sudo apt install pwgen docker-ce docker-ce-cli containerd.io`
+
+   Need docker repos? see https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+2. `cat bashrc >> $HOME/.bashrc` (this adds the `quick_bionic` alias)
+3. `docker build -t local:bionic-latest .`
+4. `mkdir -p $HOME/mnt/quick_bionic` (create the shared mount point)
 
 All done! Test it out by sourcing `.bashrc` (or opening a new shell), and typing `quick_bionic`
