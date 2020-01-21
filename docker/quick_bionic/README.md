@@ -4,7 +4,7 @@ This Dockerfile builds a container off ubuntu/bionic, which contains:
 
 1. tmux
 2. tmate
-3. openssh-client w/ generated keypair for each run
+3. openssh-client with keys generated when container is built
 4. vim (with jedi and my .vimrc)
 5. python3.8, pip3.8, ipython
 6. bind-mount to share files from host's `$HOME/mnt/quick_bionic` to containers `/mnt/quick_bionic`
