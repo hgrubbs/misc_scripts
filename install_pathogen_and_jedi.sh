@@ -12,3 +12,8 @@ PWD=$(pwd)
 cd ~/.vim/bundle/jedi-vim
 git submodule update --init --recursive
 cd ${PWD}
+
+echo "installing logstash.vim"
+cd ~.vim/bundle
+git clone https://github.com/prettier/vim-prettier
+cd ${PWD}
