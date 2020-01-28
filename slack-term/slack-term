@@ -1,0 +1,26 @@
+{
+    "slack_token": "{{ slack_token }}",
+    "notify": "mention",
+    "emoji": true,
+    "theme": {
+    "view": {
+            "fg": "white",
+            "bg": "default",
+            "border_fg": "white",
+            "border_bg": "",
+            "label_fg": "green,bold"
+        },
+        "message": {
+            "time_format": "02 Jan 06 15:04 CST",
+            "_time_format": "01/02 15:04",
+            "time": "fg-green,fg-bold",
+            "name": "colorize,fg-bold",
+            "text": "fg-blue"
+        },
+        "channel": {
+            "prefix": "fg-red,fg-bold",
+            "icon": "fg-green,fg-bold",
+            "text": "fg-blue,fg-bold"
+        }
+    }
+}
