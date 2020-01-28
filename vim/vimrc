@@ -6,6 +6,7 @@
 :set incsearch
 :set number
 :set cursorline
+:set ruler
 
 au BufRead,BufNewFile Jenkinsfile* set filetype=groovy
 au BufRead,BufNewFile *.md set filetype=markdown
