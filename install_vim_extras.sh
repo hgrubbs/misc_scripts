@@ -14,6 +14,9 @@ git submodule update --init --recursive
 cd ${PWD}
 
 echo "installing logstash.vim"
-cd ~.vim/bundle
+cd ~/.vim/bundle
 git clone https://github.com/prettier/vim-prettier
 cd ${PWD}
+
+echo "installing vundle"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
