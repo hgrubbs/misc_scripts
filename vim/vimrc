@@ -1,3 +1,4 @@
+"############## PERSONAL BEGIN
 :syn on
 :set tabstop=4
 :set shiftwidth=4
@@ -38,3 +39,4 @@ let g:netrw_browse_split = 4
 
 "jedi sets this to 80, which i think is lame
 :set textwidth=0 
+"############## PERSONAL END

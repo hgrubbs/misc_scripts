@@ -20,6 +20,6 @@ RUN npm install -g ttystudio
 
 #misc_scripts
 RUN cd /root && git clone https://github.com/hgrubbs/misc_scripts
-RUN cd /root/misc_scripts && ./setup_vim_tmux_bashrc.sh && ./install_pathogen_and_jedi.sh
+RUN cd /root/misc_scripts && ./setup_vim_tmux_bashrc.sh
 
 CMD cd /root && /bin/bash
