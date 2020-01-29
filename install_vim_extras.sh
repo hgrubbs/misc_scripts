@@ -1,4 +1,5 @@
 #!/bin/sh -x
+BASEDIR=$(pwd)
 
 echo "installing pathogen"
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
@@ -8,15 +9,14 @@ echo "installing jedi-vim"
 git clone --recursive https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
 
 echo "updating jedi-vim"
-PWD=$(pwd)
 cd ~/.vim/bundle/jedi-vim
 git submodule update --init --recursive
-cd ${PWD}
+cd ${BASEDIR}
 
 echo "installing logstash.vim"
 cd ~/.vim/bundle
 git clone https://github.com/prettier/vim-prettier
-cd ${PWD}
+cd ${BASEDIR}
 
 echo "installing vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
