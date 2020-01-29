@@ -30,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'bling/vim-bufferline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,3 +47,46 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 "################## VUNDLE END
+
+"############## PERSONAL BEGIN
+:syn on
+:set tabstop=4
+:set shiftwidth=4
+:set expandtab
+:set hlsearch
+:set incsearch
+:set number
+:set cursorline
+:set ruler
+
+au BufRead,BufNewFile Jenkinsfile* set filetype=groovy
+au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.py set foldmethod=indent
+
+:cmap ,d :w !diff % -
+:cmap ,p :0,$!yapf
+:cmap ,m :w !mypy %
+
+""remap escape for stupid touchbars
+":imap ii <Esc> 
+
+""open files from explore in previous split
+let g:netrw_browse_split = 4
+
+""enable pathogen(which if jedi is installed, starts it automatically
+"execute pathogen#infect() 
+
+""disable jedi
+"let g:jedi#auto_initialization = 0
+
+"" don't pop open autocomplete on by typing '.'
+"let g:jedi#popup_on_dot = 0 
+
+""can disable showing call signatures altogether
+"let g:jedi#show_call_signatures = "1" 
+
+"jedi sets this to 80, which i think is lame
+:set textwidth=0 
+"############## PERSONAL END
