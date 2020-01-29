@@ -21,5 +21,7 @@ cd ${PWD}
 echo "installing vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+cat vim/vimrc vim/vundle_vimrc > $HOME/.vimrc
+
 echo "installing vundle plugin(s)"
 vim +PluginInstall +qall
