@@ -1,6 +1,12 @@
 #!/bin/sh -x
 BASEDIR=$(pwd)
 
+echo "installing https://github.com/jvirtanen/vim-hcl"
+mkdir -p $HOME/.vim/pack/jvirtanen/start
+cd $HOME/.vim/pack/jvirtanen/start
+git clone git://github.com/jvirtanen/vim-hcl.git
+cd ${BASEDIR}
+
 echo "installing pathogen"
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -26,3 +32,5 @@ cat vim/vundle_vimrc vim/vimrc > $HOME/.vimrc
 
 echo "installing vundle plugin(s)"
 vim +PluginInstall +qall
+
+
