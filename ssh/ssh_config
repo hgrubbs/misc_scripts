@@ -1,0 +1,16 @@
+CheckHostIp no
+StrictHostKeyChecking no
+UserKnownHostsFile /dev/null
+
+Host *
+    ControlMaster auto
+    ControlPath ~/.ssh/ssh_mux_%h_%p_%r
+
+Host foo
+    HostName foohost
+    User foouser
+    IdentityFile ~/.ssh/foo_key
+
+Host bar
+    HostName barhost
+    ProxyJUmp foo
