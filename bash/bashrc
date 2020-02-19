@@ -42,11 +42,11 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 #1-line with parse_git_branch
-#export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${txtrst} $ "
+#export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${hrdrst} $ "
 
 #2-line with parse_git_branch
-export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${txtrst}\n${bldylw}\W${txtrst} $ "
+export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${txtrst}\n${bldylw}\W${hrdrst} $ "
 
 #2-line with PLACEHOLDER
-#export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw} >PLACEHOLDER< ${txtrst}\n${bldylw}\W${txtrst} $ "
+#export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw} >PLACEHOLDER< ${txtrst}\n${bldylw}\W${hrdrst} $ "
 ##end git ps1
