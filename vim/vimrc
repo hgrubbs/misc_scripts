@@ -23,7 +23,7 @@ au BufRead,BufNewFile *.py set foldmethod=indent
 ":imap ii <Esc> 
 
 ""open files from explore in previous split
-let g:netrw_browse_split = 4
+"let g:netrw_browse_split = 4
 
 ""enable pathogen(which if jedi is installed, starts it automatically
 "execute pathogen#infect() 
