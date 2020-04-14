@@ -39,4 +39,7 @@ au BufRead,BufNewFile *.py set foldmethod=indent
 
 "jedi sets this to 80, which i think is lame
 :set textwidth=0 
+
+"allow cursor to move to empty spaces, only padding them if edited
+"set virtualedit=all
 "############## PERSONAL END
