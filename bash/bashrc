@@ -50,3 +50,5 @@ export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${t
 #2-line with PLACEHOLDER
 #export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw} >PLACEHOLDER< ${txtrst}\n${bldylw}\W${hrdrst} $ "
 ##end git ps1
+alias datestamp_military='date +"%Y%m%d"'
+alias timestamp_military='date +"%Y%m%d.%H%M%S"'
