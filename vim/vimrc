@@ -16,7 +16,7 @@ au BufRead,BufNewFile *.y*ml set tabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.py set foldmethod=indent
 
 :cmap ,d :w !diff % -
-:cmap ,p :0,$!yapf
+:cmap ,p :0,$!yapf --style='{based_on_style: pep8, indent_width: 2, COLUMN_LIMIT: 200}'
 :cmap ,m :w !mypy %
 :cmap ,j :0,$!jq . 
 
