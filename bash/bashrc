@@ -45,7 +45,7 @@ parse_git_branch() {
 #export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${hrdrst} $ "
 
 #2-line with parse_git_branch
-export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${txtrst}\n${bldylw}\W${hrdrst} $ "
+export PS1="%${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw}\$(parse_git_branch)${txtrst}\n${bldylw}\W${hrdrst} $ "
 
 #2-line with PLACEHOLDER
 #export PS1=">${bldcyn}\u@\h${txtrst} ${txtgrn}\w${txtylw} >PLACEHOLDER< ${txtrst}\n${bldylw}\W${hrdrst} $ "
